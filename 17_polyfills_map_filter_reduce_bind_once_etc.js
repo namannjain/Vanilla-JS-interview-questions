@@ -79,9 +79,9 @@ console.log(newFunc(10000));
 function once(fn, context) {
   let ran;
   return function () {
-    if (func) {
-      ran = func.apply(context || this, arguments);
-      func = null;  //so that it can't be called again
+    if (fn) {
+      ran = fn.apply(context || this, arguments);
+      fn = null;  //so that it can't be called again
     }
     return ran;
   }

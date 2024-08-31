@@ -22,5 +22,5 @@ console.log(memoizedClumsyProduct(9467, 6789));
 console.timeEnd("First call");
 
 console.time("Second call");
-console.log(memoizedClumsyProduct(1234, 6789));
+console.log(memoizedClumsyProduct(9467, 6789));
 console.timeEnd("Second call");
